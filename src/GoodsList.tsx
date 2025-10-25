@@ -16,3 +16,17 @@ const GoodsListComponent: React.FC<Props> = ({ goods }) => (
 );
 
 export const GoodsList = React.memo(GoodsListComponent);
+
+// ----------------------------------------------------------------------
+// export const GoodsList: React.FC<Props> = React.memo(({ goods }) => (
+//   <ul>
+//     {goods.map(good => (
+//       <li key={good.id} style={{ backgroundColor: good.color }}>
+//         {good.name}
+//       </li>
+//     ))}
+//   </ul>
+// ));
+
+// GoodsList.displayName = 'GoodsList';
+// ----------------------------------------------------------------------
